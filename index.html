@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Chhavi Jain - First-Year B.Tech Electronics & Communication Engineering student at JECRC University. Exploring embedded systems, electronics, and semiconductor technology.">
+  <meta name="keywords" content="Chhavi Jain, Portfolio, Electronics and Communication Engineering, JECRC University, Embedded Systems, Basic Electronics, Arduino, ESP32">
+  <meta name="author" content="Chhavi Jain">
+  <title>Chhavi Jain | ECE Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Toast Notification for Placeholders -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Home">
+        <span class="logo-accent">&lt;</span>CJ<span class="logo-accent">/&gt;</span>
+        <span class="logo-name">Chhavi Jain</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#activities" class="nav-link">Activities</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <button class="btn btn-outline btn-sm resume-btn" id="navResumeBtn">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Resume
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- 1. Home / Hero Section -->
+    <section id="home" class="hero-section section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge hero-badge">
+            <span class="status-dot"></span>
+            <span>First Year B.Tech Student &bull; ECE</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Chhavi Jain</span>
+          </h1>
+          <p class="hero-subtitle">
+            B.Tech in Electronics &amp; Communication Engineering at <span class="highlight">JECRC University</span> (2026–2030).
+          </p>
+          <p class="hero-desc">
+            Currently exploring electronics, embedded systems, VLSI and semiconductor technology while building my programming, electronics and problem-solving foundations.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Contact Me
+            </a>
+            <button class="btn btn-outline resume-btn" id="heroResumeBtn">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Resume (PDF)
+            </button>
+          </div>
+
+          <div class="hero-socials">
+            <span class="socials-label">Connect:</span>
+            <!-- LinkedIn Placeholder -->
+            <a href="#" class="social-link placeholder-link" data-platform="LinkedIn" aria-label="LinkedIn profile placeholder">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <!-- GitHub Placeholder -->
+            <a href="#" class="social-link placeholder-link" data-platform="GitHub" aria-label="GitHub profile placeholder">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="circuit-card">
+            <div class="circuit-header">
+              <span class="circuit-dot red"></span>
+              <span class="circuit-dot yellow"></span>
+              <span class="circuit-dot green"></span>
+              <span class="circuit-title">profile_overview.json</span>
+            </div>
+            <pre class="code-block"><code>{
+  <span class="code-key">"name"</span>: <span class="code-str">"Chhavi Jain"</span>,
+  <span class="code-key">"status"</span>: <span class="code-str">"First Year B.Tech"</span>,
+  <span class="code-key">"department"</span>: <span class="code-str">"ECE"</span>,
+  <span class="code-key">"institution"</span>: <span class="code-str">"JECRC University"</span>,
+  <span class="code-key">"academic_span"</span>: <span class="code-str">"2026 - 2030"</span>,
+  <span class="code-key">"interests"</span>: [
+    <span class="code-str">"Electronics &amp; Circuits"</span>,
+    <span class="code-str">"Embedded Systems"</span>,
+    <span class="code-str">"Semiconductor Basics"</span>
+  ],
+  <span class="code-key">"current_focus"</span>: <span class="code-str">"Building Technical Foundations"</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section id="about" class="about-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Overview</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-bio-card">
+            <h3 class="about-subtitle">Building Foundations in Electronics &amp; Engineering</h3>
+            <p class="about-paragraph">
+              I am a first-year B.Tech student in <strong>Electronics and Communication Engineering</strong> at <strong>JECRC University</strong>. I am currently exploring electronics, embedded systems, VLSI and semiconductor technology while developing my programming and technical skills.
+            </p>
+            <p class="about-paragraph">
+              As part of the <strong>2026–2030</strong> academic cohort, I am focusing on foundational engineering coursework, basic electronic components, and beginner-level microcontroller programming to build strong core competencies.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="highlight-title">Electronics &amp; Microcontrollers</h4>
+                  <p class="highlight-desc">Learning circuit fundamentals and experimenting with Arduino and ESP32.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                    <rect x="9" y="9" width="6" height="6"></rect>
+                    <line x1="9" y1="1" x2="9" y2="4"></line>
+                    <line x1="15" y1="1" x2="15" y2="4"></line>
+                    <line x1="9" y1="20" x2="9" y2="23"></line>
+                    <line x1="15" y1="20" x2="15" y2="23"></line>
+                    <line x1="20" y1="9" x2="23" y2="9"></line>
+                    <line x1="20" y1="14" x2="23" y2="14"></line>
+                    <line x1="1" y1="9" x2="4" y2="9"></line>
+                    <line x1="1" y1="14" x2="4" y2="14"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="highlight-title">Semiconductor &amp; VLSI Exploration</h4>
+                  <p class="highlight-desc">Attending learning sessions on semiconductor fabrication and materials.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="highlight-title">Programming Foundations</h4>
+                  <p class="highlight-desc">Practicing introductory programming in C and Python.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-sidebar">
+            <div class="quick-facts-card">
+              <h4 class="card-heading">Quick Information</h4>
+              <ul class="facts-list">
+                <li>
+                  <span class="fact-label">Name</span>
+                  <span class="fact-val">Chhavi Jain</span>
+                </li>
+                <li>
+                  <span class="fact-label">Program</span>
+                  <span class="fact-val">B.Tech ECE</span>
+                </li>
+                <li>
+                  <span class="fact-label">University</span>
+                  <span class="fact-val">JECRC University</span>
+                </li>
+                <li>
+                  <span class="fact-label">Academic Year</span>
+                  <span class="fact-val">First Year (2026–2030)</span>
+                </li>
+                <li>
+                  <span class="fact-label">Location</span>
+                  <span class="fact-val">Jaipur, Rajasthan, India</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Skills Section -->
+    <section id="skills" class="skills-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Core hardware, programming, and learning tools I am currently developing</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Hardware & Electronics -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Hardware &amp; Electronics</h3>
+                <p class="category-desc">Microcontrollers and circuit fundamentals</p>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Basic Electronics</span>
+                <span class="skill-level-badge foundation">Beginner / Foundation</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Arduino</span>
+                <span class="skill-level-badge beginner">Beginner</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">ESP32</span>
+                <span class="skill-level-badge beginner">Beginner</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Microcontroller Fundamentals</span>
+                <span class="skill-level-badge beginner">Beginner</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programming -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Programming</h3>
+                <p class="category-desc">Language fundamentals and logic</p>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">C</span>
+                <span class="skill-level-badge beginner">Beginner</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Python</span>
+                <span class="skill-level-badge beginner">Beginner</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Tools &amp; Platforms</h3>
+                <p class="category-desc">Version control and collaboration</p>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Git / GitHub</span>
+                <span class="skill-level-badge beginner">Beginner</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">AI Tools</h3>
+                <p class="category-desc">Assisting research and technical learning</p>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">ChatGPT</span>
+                <span class="skill-level-badge familiarity">Familiarity</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Gemini</span>
+                <span class="skill-level-badge familiarity">Familiarity</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Claude</span>
+                <span class="skill-level-badge familiarity">Familiarity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Projects Section -->
+    <section id="projects" class="projects-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Project Concept</span>
+          <h2 class="section-title">Current Project Concept</h2>
+          <p class="section-subtitle">An IoT-based concept developed as part of an entrepreneurship and ideation activity</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid single-project">
+          <!-- SmartLab Concept Card -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-type-badge">IoT &bull; EDP Concept</div>
+              <div class="project-status concept">Concept / In Development</div>
+            </div>
+            <h3 class="project-title">SmartLab – IoT Energy Monitoring System (Concept)</h3>
+            <p class="project-desc">
+              An IoT-based project concept developed as part of a college entrepreneurship/EDP activity. The idea is to monitor electricity usage and equipment conditions in college classrooms and laboratories using sensors, ESP32/Arduino, and a monitoring dashboard. The concept is currently at the planning/idea stage.
+            </p>
+
+            <div class="project-features">
+              <h4 class="features-label">Key Focus Areas:</h4>
+              <ul class="features-list">
+                <li>Problem identification</li>
+                <li>Proposed IoT-based solution</li>
+                <li>Initial system planning</li>
+                <li>Team-based ideation</li>
+              </ul>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">IoT Concept</span>
+              <span class="tag">ESP32 / Arduino</span>
+              <span class="tag">Sensors</span>
+              <span class="tag">EDP Ideation</span>
+              <span class="tag">Planning Stage</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-sm btn-outline placeholder-btn" data-action="Concept Overview">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                Concept Overview
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Education Section -->
+    <section id="education" class="education-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academics</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Academic background and foundational engineering studies</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="education-timeline">
+          <div class="education-card">
+            <div class="edu-badge">2026 – 2030 (In Progress)</div>
+            <div class="edu-body">
+              <div class="edu-header">
+                <div>
+                  <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+                  <h4 class="edu-field">Electronics and Communication Engineering</h4>
+                </div>
+                <div class="edu-institution-tag">JECRC University</div>
+              </div>
+              <p class="edu-status">
+                <strong>Current Status:</strong> First Year Student
+              </p>
+              <p class="edu-desc">
+                Engaging in first-year coursework encompassing engineering physics, basic electrical and electronics engineering, circuit concepts, and foundational programming.
+              </p>
+
+              <div class="edu-focus-areas">
+                <span class="focus-pill">Circuit Theory</span>
+                <span class="focus-pill">Basic Electronics</span>
+                <span class="focus-pill">Microcontroller Fundamentals</span>
+                <span class="focus-pill">C Programming</span>
+                <span class="focus-pill">Engineering Mathematics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Activities Section -->
+    <section id="activities" class="activities-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Extracurricular</span>
+          <h2 class="section-title">Activities &amp; Highlights</h2>
+          <p class="section-subtitle">Workshops, ideation, and institutional involvement</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="activities-grid">
+          <div class="activity-card">
+            <div class="activity-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="activity-content">
+              <h3 class="activity-title">Hackathon Participation</h3>
+              <p class="activity-desc">
+                Participated in a hackathon and worked with a team on research, presentation, and problem-solving activities.
+              </p>
+            </div>
+          </div>
+
+          <div class="activity-card">
+            <div class="activity-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M16 12l-4-4-4 4M12 16V8"></path>
+              </svg>
+            </div>
+            <div class="activity-content">
+              <h3 class="activity-title">Smart India Hackathon (SIH) Preparation</h3>
+              <p class="activity-desc">
+                Participated in team ideation and preparation activities for the Smart India Hackathon.
+              </p>
+            </div>
+          </div>
+
+          <div class="activity-card">
+            <div class="activity-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <div class="activity-content">
+              <h3 class="activity-title">JECRC Entrepreneurship &amp; EDP Activities</h3>
+              <p class="activity-desc">
+                Participated in Entrepreneurship Development Cell (EDP) activities at JECRC University, working on project ideation and concept development.
+              </p>
+            </div>
+          </div>
+
+          <div class="activity-card">
+            <div class="activity-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="activity-content">
+              <h3 class="activity-title">JECRC Event Volunteering</h3>
+              <p class="activity-desc">
+                Selected as a volunteer for a JECRC University event, contributing to ground promotion and event-related activities.
+              </p>
+            </div>
+          </div>
+
+          <div class="activity-card featured-activity">
+            <div class="activity-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+              </svg>
+            </div>
+            <div class="activity-content">
+              <h3 class="activity-title">Semiconductor Manufacturing &amp; Fabrication Session</h3>
+              <p class="activity-desc">
+                Attended a learning session on semiconductor manufacturing, fabrication workflows, and cleanroom basics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Contact Section -->
+    <section id="contact" class="contact-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">Feel free to connect for collaborations, learning opportunities, or inquiries</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <h3 class="contact-card-title">Let's Connect</h3>
+            <p class="contact-card-desc">
+              I am currently exploring electronics, embedded systems, semiconductor technology, and college projects. Feel free to connect for learning opportunities and collaborations.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="method-label">Direct Message</span>
+                  <p class="method-val">Use the contact form or connect via LinkedIn</p>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="method-label">Location &amp; University</span>
+                  <p class="method-val">JECRC University</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links-block">
+              <h4 class="socials-heading">Profiles &amp; Repositories:</h4>
+              <div class="social-pills">
+                <a href="#" class="social-pill placeholder-link" data-platform="LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                  <span>LinkedIn (Placeholder)</span>
+                </a>
+                <a href="#" class="social-pill placeholder-link" data-platform="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <span>GitHub (Placeholder)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                <span class="form-error" id="nameError">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+                <span class="form-error" id="emailError">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="Topic / Opportunity" required>
+                <span class="form-error" id="subjectError">Please enter a subject.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Your message here..." required></textarea>
+                <span class="form-error" id="messageError">Please enter your message.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <p class="footer-copy">&copy; <span id="currentYear">2026</span> Chhavi Jain. All rights reserved.</p>
+        <p class="footer-sub">B.Tech ECE &bull; JECRC University (2026–2030)</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home" class="back-to-top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
